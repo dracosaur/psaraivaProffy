@@ -1,0 +1,48 @@
+
+   /*input seria a hora*/
+.select-block label,
+.input-block label,
+.textarea-block label {
+      font-size: 1.4;
+      color: var(--color-text-complement);
+   }
+   
+
+.input-block input,
+.select-block select, 
+.textarea-block textarea {
+     width: 100%; /*esticar tudo na tela*/
+     height: 5.6rem; /*altura*/
+     margin-top: 0.8rem; /*separação entre topo e label*/
+     border-radius: 0.8rem; /*arrendondamento da borda*/
+     background: var(--color-input-background); /*cor do background do input*/
+     border: 1px solid var(--color-line-in-white); /*cor da borda*/
+     outline: 0; /*tirar o campo de seleção*/
+     padding: 0 1.6rem; /* dar um preenchimento nas bordas */
+     font: 1.6rem Archivo; /*Fonte usada*/
+  }
+  
+  .textarea-block textarea {
+    padding: 1.2rem 1.6rem;
+    height: 16rem;  
+
+    resize: vertical;
+  }
+
+.input-block,
+.textarea-block {
+     position: relative;
+  } 
+
+ /*Quando um elemento estiver em foco, ele ira procurar no input e depois ele vai criar um elemento html quando ele estiver em foco*/
+.input-block:focus-within::after ,
+.textarea-block:focus-within:after {
+     content: "";
+     width: calc(100% - 3.2rem);/*calculo de 100% - 3.2rem*/
+     height: 2px; /**/
+     background: var(--color-primary-light);/*So aparece a cor quando clicar no elemnto*/
+
+     position: absolute;/*posocionamento absoluto: */
+     left: 1.6rem;/**/ 
+     bottom: 0;
+     }

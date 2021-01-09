@@ -1,0 +1,220 @@
+#page-study #container {
+   height: 100vh;
+   width: 100vw;
+}
+
+
+#search-teachers {
+margin-top: 3.2rem;
+
+}
+
+#search-teachers label {
+   color: var(--color-text-in-primary);
+}
+
+#search-teachers .select-block {
+margin-bottom: 1.4rem;
+
+}
+
+#search-teachers button{
+  width: 100%; /*largura*/
+  height: 5.6rem; /*altura*/
+  background: var(--color-secondary);/*cor de fundo*/
+  color: var(--color-button-text); /*cor do texto*/
+  border: 0; /*sem borda padrão*/
+  border-radius: .8rem; /*arredondamento*/
+  cursor: pointer; /*a mãozinha*/
+  font: 700 1.6rem Archivo; /*fonte / altura/ tipo de fonte*/
+  display: flex; /*botao*/
+  align-items: center; /*sempre alinhado ao meio*/
+  justify-content: center; /**/
+  text-decoration: none; /*não tem nada*/
+  transition: background 0.2s; /*transição de cor de fundo*/
+  margin-top: 3.2rem; /*margem*/
+  }
+
+#search-teachers button:hover {
+  background-color: var(--color-secondary-dark); /*Estilo usado para quandon passar o mouse em cima mudar a cor*/
+
+  }
+  
+
+      #page-study main{
+         margin: 3.2rem auto;
+         width: 90%;
+      }
+
+      .teacher-item {
+         background-color: var(--color-box-base);
+         border: 1px solid var(--color-line-in-white);
+         border-radius: 0.8rem;
+         margin-top: 2.4rem;
+      }
+
+      .teacher-item header {
+         padding: 3.2rem 2rem;
+         display: flex;
+         align-items: center;
+
+      }
+
+      .teacher-item header img{
+       width: 8rem;  /*quadrado perfeito*/
+       height: 8rem; /*quadrado perfeito*/
+       border-radius: 50%; /*Ele consegue fazer uma bolinha quando fazemos um quadrado perfeito.*/
+
+      }
+
+      .teacher-item header div{
+         margin-left: 2.4rem;
+      }
+
+      .teacher-item header div strong{
+         font: 700 2.4rem Arial;
+         display: block;
+         color: var(--color-text-title);
+      }
+
+      .teacher-item header div span{
+         font-size: 1.6rem;
+         display: block;
+         margin-top: .4rem;
+      }
+
+      .teacher-item > p{
+         padding: 0 2rem;
+         font-size: 1.6rem;
+         line-height: 2.8rem;
+         
+      }
+
+      .teacher-item footer {
+         padding: 3.2rem 2rem;
+         background-color: var(--color-box-footer);
+         border-top: 1px solid var(--color-line-in-white);
+         margin-top: 3.2rem;
+
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+
+      .teacher-item footer p {
+         font-size: 1.4rem;
+         line-height: 2.4rem;
+         color: var(--color-text-complement);
+      }
+
+      .teacher-item footer p strong{
+         font-size: 1.6rem;
+         color: var(--color-primary);
+         display: block;
+      }
+     
+      .teacher-item footer .button{
+         width: 20rem; /*largura*/
+         height: 5.6rem; /*altura*/
+         background: var(--color-secondary); /*cor de fundo*/
+         color: var(--color-button-text); /*cor*/
+         border: 0; /*borda*/
+         border-radius: .8rem; /*arrendondamento da borda*/
+         cursor: pointer; /*Quando estiver com o mouse em cima sera uma mão*/
+         font: 700 1.4rem Archivo;/*fonte utilizada*/
+
+         display: flex; /*centralizado ao meio o texto*/
+         align-items: center; /*alinhamento das caixas na linha X*/
+         justify-content: space-evenly; /*separação constante entre os elementos*/
+
+         text-decoration: none; /*decoração do texto button:hover*/
+ 
+         transition: background 0.2s;/*transição de fundo*/
+         margin-left: 1.6rem;/**/
+      } 
+
+      .teacher-item footer .button:hover{
+         background: var(--color-secondary-dark);
+
+      }
+
+      #page-study main .no-results {
+         max-width: 30rem;
+         margin: 12rem auto;
+         text-align: center;
+      }
+
+      /*------------------ QUANDO FOR ABERTO EM UM NAVEGADOR NO COMPUTADOR --------------------------------- */
+
+      @media (min-width: 700px){
+         #page-study #container {
+         max-width: 100vw;
+         }
+
+         .page-header {
+            height: 340px;
+         }
+        .page-header .top-bar-container {
+           max-width: 1100px;
+        }
+
+        .page-header .header-content {
+           max-width: 740px;
+           margin: 0 auto;
+           flex: 1 1;
+           padding-bottom: 48px;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+
+
+        }
+        .page-header .header-content strong{
+           max-width: 350px;
+
+        }
+
+         .teacher-item header,
+         .teacher-item footer {
+            padding: 32px;
+         }
+
+         #search-teachers {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            position: absolute;
+            bottom: -28px;
+
+         }
+
+         #page-study main {
+            padding: 32px 0;
+            max-width: 740px;
+            margin: 0 auto;
+
+         }
+         #seart-teachers .select-block {
+            margin-bottom: 0;
+         }
+
+         .teacher-item > p {
+            padding: 0 32px;
+         }
+
+         .teacher-item footer p strong {
+            display: initial;
+            margin-left: 16px;
+         }
+      .teacher-item footer button{
+         width: 245px;
+         font-size: 16px;
+         justify-content: center;
+      }
+      .teacher-item footer button img{
+         margin-right: 16px;
+
+      }
+
+
+      }
